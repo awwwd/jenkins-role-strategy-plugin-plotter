@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jenkins</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="popup.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+      body {width: 300px;}
+      h4 {text-align: center;margin-bottom: 10px;}
+      #row {width: 250px; padding: 6px;}
+      #selectionList { width: 250px; padding: 6px; margin-bottom: 15px; border-radius: 5px;}
+      .btnn {width: 80px; text-align: center;}
+    </style>
+</head>
+
+<body style="padding: 15px">
+    <div class="container">
+        <h4>Jenkins Permission Plotter</h4>
+        <form class="form-horizontal">
+            <input type="username" id="row" placeholder="Username" class="form-control"><br>
+            <select id="selectionList">
+              <option value="" disabled selected>Select The Project</option>
+            </select>
+            <br>
+            <div class="text-center">
+                <input type="button" id="check" value="Check" class="btn btn-success btnn">
+                <input type="button" id="uncheck" value="Uncheck" class="btn btn-danger btnn">
+            </div>
+        </form>
+        <p class="text-center small">Coded with &#10084; by amitauddy</p>
+    </div>
+</body>
+</html>

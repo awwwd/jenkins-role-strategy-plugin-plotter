@@ -1,0 +1,29 @@
+{
+  "name": "Jenkins Permission Plotter",
+   "description": "This extension will tick in the given position",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/jenkins/*", "https://*/jenkins/*"
+  ],
+  "browser_action": {
+      "default_title": "Permission Plotter.",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+  {
+      "matches": ["http://*/jenkins/*","https://*/jenkins/*"],
+      "js": [ "datacollect.js", "jquery.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "manifest_version": 2
+}
